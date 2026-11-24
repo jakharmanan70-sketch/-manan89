@@ -1,0 +1,12 @@
+# The Netlify project uses "manan" as its base directory.
+# This is a static site with no build step and no functions.
+[build]
+  command = ""
+  publish = "."
+  functions = "netlify/functions"
+
+# Keep the old URL working.
+[[redirects]]
+  from = "/pixelverse_arcade.html"
+  to = "/"
+  status = 301
